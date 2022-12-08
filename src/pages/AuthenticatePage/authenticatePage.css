@@ -1,0 +1,39 @@
+.authenticate-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.authenticate-upper-side {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authenticate-down-side {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authenticate-img {
+  width: 500px;
+}
+
+.down-left-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-right-side {
+  width: 50%;
+  height: 100%;
+}
