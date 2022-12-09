@@ -1,0 +1,176 @@
+.search-form-container {
+  width: 100%;
+  height: 92vh;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #251e8f;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-search-route {
+  width: 55vw;
+  height: 70vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.destination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 10px 0px;
+}
+
+.destination-from {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.destination-to {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px 0px;
+}
+
+.cargo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 10px 0px;
+}
+
+.cargo-type-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cargo-weight-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cargo-size-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px 0px;
+}
+
+.same-input-form {
+  width: 19vw;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  padding: 0px 5px;
+  outline: none;
+  color: #251e8f;
+}
+
+.label-same-form {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.same-input-form::placeholder {
+  color: #66657e;
+}
+
+.additional-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+}
+
+.services-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.additional-title {
+  align-self: flex-start;
+  font-weight: 500;
+}
+
+.services-col div {
+  margin: 10px 0px;
+}
+
+.services-col div input {
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.ship-icon {
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ship-icon #ship {
+  animation: float 3s ease-in-out infinite;
+}
+
+.search-route-button {
+  width: 80%;
+  height: 35px;
+  background-color: #6c63ff;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.6s all ease-in-out;
+}
+
+.search-route-button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(3px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translateY(0px);
+  }
+}

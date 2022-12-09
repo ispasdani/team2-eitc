@@ -1,13 +1,21 @@
 .authenticate-container {
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+.authenticate-content {
+  width: 55vw;
+  height: 70vh;
+  background-color: white;
 }
 
 .authenticate-upper-side {
   width: 100%;
-  height: 40vh;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +23,14 @@
 
 .authenticate-down-side {
   width: 100%;
-  height: 60vh;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .authenticate-img {
-  width: 500px;
+  width: 350px;
 }
 
 .down-left-side {
@@ -30,10 +38,13 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .down-right-side {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }

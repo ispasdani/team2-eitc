@@ -1,0 +1,72 @@
+.create-acc-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  height: auto;
+}
+
+.form-create-acc {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #6c63ff;
+  width: 22vw;
+  height: auto;
+  border-radius: 10px;
+}
+
+.create-acc-title {
+  color: #6c63ff;
+  font-weight: bold;
+}
+
+.form-row-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.form-row-container label {
+  color: white;
+  margin: 5px 0px;
+}
+
+.form-row-container input {
+  background-color: #d9d9d9;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.form-row-container input::placeholder {
+  color: #66657e;
+  padding: 0px 5px;
+}
+
+.form-create-acc button {
+  width: 312px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #251e8f;
+  color: white;
+  background-color: white;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+  background-color: #251e8f;
+}
+
+.form-create-acc button:hover {
+  transform: scale(1.05);
+}
