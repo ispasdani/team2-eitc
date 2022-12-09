@@ -1,10 +1,34 @@
+import { useState } from "react";
 import "./searchForm.css";
 import { ShipIcon } from "../../assets/shipIcon";
+import { useNavigate } from "react-router-dom";
 
 export const SearchForm = () => {
+  const [destinationFrom, setDestinationFrom] = useState("");
+  const [destinationTo, setDestinationTo] = useState("");
+  const [date, setDate] = useState("");
+  const [cargoType, setCargoType] = useState("");
+  const [cargoWeight, setCargoWeight] = useState("");
+  const [cargoSize, setCargoSize] = useState("");
+  const navigate = useNavigate();
+
+  const navigateToResults = () => {};
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    setDestinationFrom("");
+    setDestinationTo("");
+    setDate("");
+    setCargoType("");
+    setCargoWeight("");
+    setCargoSize("");
+    navigate("/team2-eitc/results");
+  };
+
   return (
     <div className="search-form-container">
-      <form className="form-search-route">
+      <form className="form-search-route" onSubmit={handleSubmit}>
         <ShipIcon />
 
         <div className="destination-container">
@@ -18,6 +42,8 @@ export const SearchForm = () => {
               placeholder="Enter starting point..."
               required
               className="same-input-form"
+              onChange={(event) => setDestinationFrom(event.target.value)}
+              value={destinationFrom}
             />
           </div>
           <div className="destination-to">
@@ -30,6 +56,8 @@ export const SearchForm = () => {
               placeholder="Enter starting point..."
               required
               className="same-input-form"
+              onChange={(event) => setDestinationTo(event.target.value)}
+              value={destinationTo}
             />
           </div>
         </div>
@@ -44,6 +72,8 @@ export const SearchForm = () => {
             placeholder="Enter starting date..."
             required
             className="same-input-form"
+            onChange={(event) => setDate(event.target.value)}
+            value={date}
           />
         </div>
 
@@ -58,6 +88,8 @@ export const SearchForm = () => {
               placeholder="Enter cargo type..."
               required
               className="same-input-form"
+              onChange={(event) => setCargoType(event.target.value)}
+              value={cargoType}
             />
           </div>
           <div className="cargo-weight-container">
@@ -70,6 +102,8 @@ export const SearchForm = () => {
               placeholder="Specify cargo weight..."
               className="same-input-form"
               required
+              onChange={(event) => setCargoSize(event.target.value)}
+              value={cargoSize}
             />
           </div>
         </div>
@@ -84,6 +118,8 @@ export const SearchForm = () => {
             placeholder="Enter cargo dimensions..."
             required
             className="same-input-form"
+            onChange={(event) => setCargoWeight(event.target.value)}
+            value={cargoWeight}
           />
         </div>
 

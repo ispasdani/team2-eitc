@@ -6,6 +6,7 @@ import { SearchForm } from "./components/SearchForm/SearchForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Statistics } from "./components/Statistics/Statistics";
 import { Loader } from "./components/Loader/Loader";
+import { RouteResults } from "./components/Results/Results";
 
 function App() {
   const [data, setState] = useState();
@@ -42,6 +43,10 @@ function App() {
                 <Routes>
                   <Route path="/team2-eitc/" element={<SearchForm />} />
                   <Route path="/team2-eitc/stats" element={<Statistics />} />
+                  <Route
+                    path="/team2-eitc/results"
+                    element={<RouteResults />}
+                  />
                 </Routes>
               </MainLayout>
             ) : (

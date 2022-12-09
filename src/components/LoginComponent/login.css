@@ -50,7 +50,6 @@
 
 .form-rows-container input::placeholder {
   color: rgb(143, 143, 143);
-  padding: 0px 10px;
 }
 
 .form-login button {
